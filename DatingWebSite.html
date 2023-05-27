@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+  
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css_from_website.css">
+        
+      </head>
+
+<body>
+  <h1>Please Enter Your Details For Our Dating Website!</h1>
+  
+  <fieldset>
+    <legend>Your Face</legend>
+    
+    <label for = "image">Your Image:</label>
+    <input type = "file" name = "fileToUpload" required> </br>
+    
+    <label for = "imagePreview">Image Preview:</label>
+    <img id = "preview"></img>
+    
+  </fieldset>
+
+  <fieldset>
+    <legend>Your General Details</legend>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" autofocus required> </br>
+
+    <label for="gender">Gender:</label>
+    <input type="radio" name="gender" value="male" class = "selection" required>Male</input>
+    <input type="radio" name="gender" value="female" class = "selection">Female</input>
+    </br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required> </br>
+
+    <label for="birthDate">Date of birth:</label>
+    <input type="date" id="birthDate" name="birthDate"> </br>
+
+    <label for="color">Favourite color:</label>
+    <input type="color" id="color" name="color"> </br>
+
+    <label for="country">Which country:<label>
+      <select name = "country">
+      <option value = "none"></option>
+      <option value = "Australia">Australia</option>
+      <option value = "Canada">Canada</option>
+      <option value = "Mexico">Mexico</option>
+      <option value = "USA">USA</option>
+      <option value = "other">Other</option>
+      </select></br>
+  </fieldset>
+
+<fieldset>
+  <legend>Your Indicators</legend>
+  <label for = "height">Height:</label>
+  <div class = "low">Short</div>
+  <input type = "range" min = "0" max = "100" id = "height" name = "height">
+  <div class = "high">Tall</div></br>
+
+  <label for = "salary">Salary:</label>
+<div class = "low">Poor</div>
+  <input type = "range" min = "0" max = "100" id = "salary" name = "salary">
+<div class = "high">Rich</div></br>
+</fieldset>
+
+<fieldset>
+  <legend>Your Contact Information</legend>
+    
+    <label for = "email">Email:</label>
+    <input type = "email" id = "email" name = "email" required> </br>
+    
+    <label for = "mobile">Mobile:</label>
+<input type = "tel" id = "mobile" name = "mobile"> </br>
+
+<label for = "address">Address:</label>
+<textarea id = "address" name = "address"></textarea> </br>
+
+<label for = "contactMethod">Method to contact you:</label>
+<input type = "checkbox" name = "contactMethod" value = "Email" class = "selection">Email</input>
+<input type = "checkbox" name = "contactMethod" value = "Whatsapp" class = "selection">Whatsapp</input>
+<input type = "checkbox" name = "contactMethod" value = "In-app chat" class = "selection">In-app chat</input>
+</fieldset>
+
+<input type = "submit" value = "Submit">
+
+</form>
+
+  <!-- <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script> -->
+
+</body>
+
+</html>
